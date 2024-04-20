@@ -422,19 +422,6 @@ main.project {
     Margin-bottom:8rem;
 }
 
-@media (max-width: 992px) {
-    .project .project-data {
-        font-size:3.1rem;
-        margin-top:0.3rem;
-    }
-
-    .project .project-description {
-        margin-bottom:3rem;
-        font-size:3.1rem;
-        line-height:122%;
-    }
-}
-
 .project .project-data-footer {
     font-size:1rem;
     line-height:122%;
@@ -485,6 +472,18 @@ main.project {
 .project .project-description::selection {
     color: var(--white);
     background: var(--color3);
+}
+
+@media (max-width: 992px) {
+    .project .project-data {
+        font-size:3.1rem;
+        margin-top:0.3rem;
+    }
+
+    .project .project-description {
+        font-size:3.1rem;
+        line-height:122%;
+    }
 }
 
 @keyframes fadeInAnimation {
