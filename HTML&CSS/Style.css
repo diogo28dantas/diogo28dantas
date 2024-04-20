@@ -422,9 +422,9 @@ main.project {
     Margin-bottom:8rem;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 992px) {
     .project .project-data {
-        font-size:2.2rem;
+        font-size:2.1rem;
     }
 }
 
