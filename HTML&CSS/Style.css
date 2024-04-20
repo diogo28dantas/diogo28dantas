@@ -82,6 +82,19 @@ header {
     z-index: 100;
 }
 
+@media (max-width: 992px) {
+    header {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        font-size: 2.5rem;
+    }
+}
+
+
 header a {
     text-decoration: none;
 }
@@ -489,7 +502,7 @@ main.project {
     object-position:center;
     object-fit:cover;
     width:100%;
-    height:calc(33vh);
+    height:calc(25vh);
     /*animation: 1s linear forwards fadeInAnimation;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;*/
@@ -497,7 +510,7 @@ main.project {
 
 @media (min-width: 576px) {
     .project .background-image-fadein {
-        height:calc(50vh);
+        height:calc(33vh);
     }
 }
 
