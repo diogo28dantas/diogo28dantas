@@ -119,7 +119,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 3.5rem;
+    margin-left: 4rem;
 }
 
 @media (max-width: 576px) {
@@ -422,6 +422,12 @@ main.project {
     Margin-bottom:8rem;
 }
 
+@media (min-width: 576px) {
+    .project .project-data {
+        font-size:2.2rem;
+    }
+}
+
 .project .project-data-footer {
     font-size:1rem;
     line-height:122%;
@@ -468,19 +474,6 @@ main.project {
     /*line-height:145%;*/
     /*line-height:2.6rem;*/
 }
-
-@media(max-width: 992px) {
-    .project .project-description {
-        font-size: 1.7rem;
-    }
-}
-
-@media(max-width: 576px) {
-    .project .project-description {
-        font-size: 1.4 rem;
-    }
-}
-
 
 .project .project-description::selection {
     color: var(--white);
