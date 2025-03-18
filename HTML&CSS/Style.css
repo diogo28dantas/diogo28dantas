@@ -8,7 +8,7 @@
 :root {
     --black: #000000;
     --white: #ffffff;
-    --color3: #cac9cf;
+    --color3: #ff008c;
     --true-black: #000000;
 }
 
@@ -47,13 +47,12 @@ body {
 
 a {
     color: inherit;
-    text-decoration: none;
-    Filter: none;
-    Transition:0.3s;
+    text-decoration: underline;
+    text-underline-offset:5%;
 }
 
 a:hover {
-    Filter: blur(3px);
+    color: var(--color3);
 }
 
 
@@ -69,43 +68,18 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    height: 3.2rem;
+    height: 4rem;
     padding-top:0;
     padding-bottom:0;
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     background-color: transparent;
 
-    font-size: 0.9rem;
-    text-transform: uppercase;
+    font-size: 1rem;
+    text-transform: capitalise;
 
     z-index: 100;
-}
-
-header div:first-child {
-    text-align:left;
-}
-
-header div:nth-child(2) {
-    text-align:center;
-}
-
-header div:nth-child(2) a {
-    Margin-left:0.5rem;
-    Margin-right:0.5rem;
-}
-
-header div:nth-child(3) {
-    Text-align:right;
-}
-
-
-.header-divisor {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    Color:inherit;
 }
 
 @media (max-width: 992px) {
@@ -123,7 +97,6 @@ header div:nth-child(3) {
 
 header a {
     text-decoration: none;
-    color:inherit;
 }
 
 header svg {
@@ -137,7 +110,7 @@ header svg:hover path {
 }
 
 header a:hover {
-    color:inherit;
+    color: var(--color3);
 }
 
 header nav ul {
@@ -203,16 +176,6 @@ main {
     margin-bottom: 1.5rem;
 }
 
-.projects .card-link:hover {
-    filter:none;
-}
-
-.projects .card-link:hover .card-container {
-    filter:blur(3px);
-}
-
-
-
 
 /*
 .projects .card-image {
@@ -240,30 +203,25 @@ main {
 }*/
 
 
-.projects .card-container {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    width=100%;
-    font-size: 0.9rem;
-    margin-bottom: 4rem;
-    margin-top: 0.7rem;
-    Margin-left:0rem;
-    Margin-right:0rem;
-}
 .projects .card-title {
-    Text-transform:uppercase;
+    font-size: 1rem;
+    margin-bottom: .3rem;
+    margin-top: 1rem;
 }
 
 .projects .card-description {
+    font-size: 1rem;
     color:var(--black);
+    margin-bottom: 4rem;
 }
 
 .projects .card-title::selection {
+    color: var(--white);
     background: var(--color3);
 }
 
 .projects .card-description::selection {
+    color: var(--white);
     background: var(--color3);
 }
 
@@ -271,7 +229,7 @@ main {
 
 .projects .artwork-image {
     position: relative;
-    padding-bottom: 100%;
+    padding-bottom: 65%;
     margin-bottom: .5rem;
     background-size: contain;
     background-position: center;
@@ -281,6 +239,10 @@ main {
 .artworks .card-title {
     font-size:0.7rem;
     margin-top: 0.5rem;
+}
+
+.artworks {
+    color:white;
 }
 
 /* NEW PROJECTS PAGE */
@@ -388,16 +350,18 @@ body:not(.mobile) .hover-title-2:hover + .hover-image-2 {
     background-color: var(--color3);
 }
 
-.about-socials-header {
-    text-transform:uppercase;
-    color:var(--color3);
+.about .about-text::selection {
+    color: var(--white);
+    background: var(--color3);
 }
 
-.about-socials-header::selection {
-    color:var(--white);
+.about .section-title::selection {
+    color: var(--white);
+    background: var(--color3);
 }
 
-::selection {
+.about .section-content::selection {
+    color: var(--white);
     background: var(--color3);
 }
 
@@ -452,36 +416,16 @@ main.project {
     }
 }
 
-.project .project-image-container {
-    margin-left:1rem;
-    margin-right:1rem;
-    margin-top:3.2rem;
-}
-
 .project .project-data {
-    Font-size:0.9rem;
+    Font-size:1.2rem;
     line-height:2.6rem;
-    Margin-bottom:3rem;
-    Margin-top:0.4rem;
-}
-
-.project .project-data div:first-child {
-    Text-align:left;
-    text-transform:uppercase;
-}
-
-.project .project-data div:nth-child(2) {
-    Text-align:center;
-}
-
-.project .project-data div:nth-child(3) {
-    Text-align:right;
+    Margin-bottom:8rem;
 }
 
 .project .project-data-footer {
-    font-size:0.9rem;
+    font-size:1rem;
     line-height:122%;
-    margin-top:3rem;
+    margin-top:8.5rem;
 }
 
 .project .project-gallery img {
@@ -530,12 +474,7 @@ main.project {
     background: var(--color3);
 }
 
-sup {
-    Font-size:60%;
-    Text-transform:uppercase;
-}
-
-@media(max-width: 992px) {
+@media (max-width: 992px) {
     .project .project-data {
         font-size:3.1rem;
         margin-top:0.3rem;
@@ -557,9 +496,11 @@ sup {
 }
 
 .project .background-image-fadein {
+    top:0%;
+    Left:0%;
     object-position:center;
     object-fit:cover;
-    Width:100%;
+    width:100%;
     height:calc(25vh);
     /*animation: 1s linear forwards fadeInAnimation;
     animation-iteration-count: 1;
@@ -575,7 +516,7 @@ sup {
 
 @media (min-width: 992px) {
     .project .background-image-fadein {
-        height:calc(100vh - 6.4rem);
+        height:calc(100vh);
     }
 }
 
@@ -600,6 +541,7 @@ footer ul {
 
 
 footer .contact::selection {
+    color: var(--white);
     background: var(--color3);
 }
 
@@ -611,12 +553,12 @@ footer .contact::selection {
     display: inline;
     pointer-events: auto;
     cursor: pointer;
-    Filter: blur(4px);
-    Transition:0.3s;
+    text-decoration: underline;
+    text-underline-offset:5%;
 }
 
 .hover-title:hover {
-    Filter: none;
+    Color: var(--color3);
 }
 
 .hover-image {
@@ -651,11 +593,4 @@ body:not(.mobile) .hover-title:hover + .hover-image {
     margin-bottom: 0;
 }
 
-
-.grey {
-    color: var(--color3);
-}
-
-.grey:hover {
-    color: var(--color3);
-}
+.
