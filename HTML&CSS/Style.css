@@ -50,7 +50,8 @@ a {
     text-decoration: none;
     filter: none;
     -webkit-filter: none;
-    Transition:0.3s;
+    transition:0.3s;
+    will-change: filter;
 }
 
 a:hover {
@@ -621,6 +622,7 @@ footer .contact::selection {
  * show image on hover
  */
 .hover-title {
+    will-change: filter;
     display: inline;
     pointer-events: auto;
     cursor: pointer;
