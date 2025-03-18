@@ -48,12 +48,15 @@ body {
 a {
     color: inherit;
     text-decoration: none;
-    Filter: none;
+    filter: none;
+    -webkit-filter: none;
     Transition:0.3s;
 }
 
 a:hover {
-    Filter: blur(3px);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    Text-decoration:none;
 }
 
 
@@ -84,10 +87,16 @@ header {
 }
 
 header div:first-child {
-    text-align:left;
+    Position:absolute;
+    Left:2.2rem;
+    top:1.rem;
 }
 
 header div:nth-child(2) {
+    position:absolute;
+    left: calc(50% - 5rem);
+    width:10rem;
+    top:1.rem;
     text-align:center;
 }
 
@@ -97,7 +106,11 @@ header div:nth-child(2) a {
 }
 
 header div:nth-child(3) {
+    Position:absolute;
     Text-align:right;
+    Left: calc(100% - 2.2rem - 4rem);
+    Width:4rem;
+    top:1.rem;
 }
 
 
@@ -611,12 +624,14 @@ footer .contact::selection {
     display: inline;
     pointer-events: auto;
     cursor: pointer;
-    Filter: blur(4px);
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
     Transition:0.3s;
 }
 
 .hover-title:hover {
-    Filter: none;
+    filter: none;
+    -webkit-filter: none;
 }
 
 .hover-image {
