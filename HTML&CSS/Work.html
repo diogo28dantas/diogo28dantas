@@ -1,0 +1,231 @@
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="../IMAGES/thumbnail.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" media="all" href="Style.css">
+
+    <style>
+	.img-div {
+	    width:100%;
+	    background-size:cover;
+	    background-position:center;
+	
+	}
+	#foraeldre {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/FORAELDRE (2025)/1.jpg') no-repeat; filter:blur(9px); 
+	}
+	#foraeldre:hover {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/FORAELDRE (2025)/1.jpg') no-repeat; filter:blur(9px);
+	}
+	#jojo {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/JOJO (2025)/1.jpg') no-repeat; filter:blur(9px);
+	}
+	#jojo:hover {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/JOJO (2025)/1.jpg') no-repeat; filter:blur(9px);
+	}
+	#spacon {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/SPACON (2024)/2.jpg') no-repeat; filter:blur(9px);
+	}
+	#spacon:hover {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/SPACON (2024)/2.jpg') no-repeat; filter:blur(9px);
+	}
+	#tcwip {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/TCWIP (2024)/1.jpg') no-repeat; filter:blur(9px);
+	}
+	#tcwip:hover {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/TCWIP (2024)/1.jpg') no-repeat; filter:blur(9px);
+	}
+	#passionfruit {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/FMP (2024)/1.jpg') no-repeat;
+	}
+	#passionfruit:hover {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/FMP (2024)/1.jpg') no-repeat;
+	}
+	#cerne {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/CERNE (2024)/01.jpg') no-repeat; filter:blur(15px); 
+	}
+	#cerne:hover {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/CERNE (2024)/011.gif') no-repeat; filter:blur(15px); 
+	}
+	#riot {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/RIOT FEST (2022)/02.gif') no-repeat; 
+	}
+	#riot:hover {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/RIOT FEST (2022)/09.jpg') no-repeat; 
+	}
+	#cream {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/CREAM (2022)/F3.jpg') no-repeat; 
+	}
+	#cream:hover {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/CREAM (2022)/F4.jpg') no-repeat; 
+	}
+	#extruplas {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/EXTRUPLAS (2020)/01.png') no-repeat; 
+	}
+	#extruplas:hover {
+	    background:url('../IMAGES/PROJECTS/GRAPHIC DESIGN/EXTRUPLAS (2020)/06.png') no-repeat; 
+	}
+	@media (min-width: 992px) {
+  	  .move-up-row {
+	    margin-top:-12rem;
+	  }
+	}
+    ul.just {
+      text-align: justify;
+    }
+    ul.just:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+    ul.just:before {
+        content: '';
+        display: block;
+        margin-top: -1.25em;
+    }
+    li.just {
+        display: inline-block;
+        margin-right: -.25em;
+        position: relative;
+        top: 1.25em;
+    }
+    .just {
+      color: #cac9cf;
+      cursor: pointer;
+    }
+    .chosen {
+      Color:black;
+    }
+    a:hover {
+      text-decoration:none;
+    }
+    </style>
+  </head>
+  <body class="projects" onload="changeImage(5, false)" style="position:relative;">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <header>
+      <div class="col-lg-4"> <a href="index.html">DD </a></div>
+      <div class="col-lg-4"> 
+	<a href="Work.html">WORK</a>/<a href="Archive.html">ARCHIVE</a></div>
+      <div class="col-lg-4"> <a href="About.html">ABOUT </a></div>
+    </header>
+              <div style="width:50%;position:absolute;top:calc(50% - 15.625vw - 2rem);left:25%;" id="card">
+                <ul class="just">
+                  <li class="just" onclick="changeImage(1)">( 01 )</li>
+                  <li class="just" onclick="changeImage(2)">( 02 )</li>
+                  <li class="just" onclick="changeImage(3)">( 03 )</li>
+                  <li class="just" onclick="changeImage(4)">( 04 )</li>
+                  <li class="just" onclick="changeImage(5)">( 05 )</li>
+                  <li class="just" onclick="changeImage(6)">( 06 )</li>
+                  <li class="just" onclick="changeImage(7)">( 07 )</li>
+                  <li class="just" onclick="changeImage(8)">( 08 )</li>
+                  <li class="just" onclick="changeImage(9)">( 09 )</li>
+                </ul>
+              </div>
+              <div class="main-img-slide" style="width:50%;height:31.25vw;position:absolute;top:calc(50% - 15.625vw); left:25%;">
+                <a href="Foraeldre.html" id="main-link" style="filter:none;"><img src="terrain.png" style="width:100%;" id="main-img" onmouseover="changeImage(cur_img, true)" onmouseleave="changeImage(cur_img, false)"/></a>
+              </div>
+
+            </div>
+          <script>
+	  var cur_img = 5;
+          function changeImage(n, hover) {
+	    cur_img = n;
+            var images = {
+              1 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/FORAELDRE (2025)/1.jpg",
+              2 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/JOJO (2025)/1.jpg",
+              3 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/SPACON (2024)/2.jpg",
+              4 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/TCWIP (2024)/1.jpg",
+              5 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/FMP (2024)/1.jpg",
+              6 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/CERNE (2024)/01.jpg",
+              7 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/RIOT FEST (2022)/09.jpg",
+              8 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/CREAM (2022)/011.jpg",
+              9 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/EXTRUPLAS (2020)/01.png"
+            };
+            var hover_images = {
+              1 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/FORAELDRE (2025)/1.jpg",
+              2 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/JOJO (2025)/1.jpg",
+              3 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/SPACON (2024)/2.jpg",
+              4 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/TCWIP (2024)/1.jpg",
+              5 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/FMP (2024)/13.gif",
+              6 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/CERNE (2024)/01.jpg",
+              7 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/RIOT FEST (2022)/10.gif",
+              8 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/CREAM (2022)/1.gif",
+              9 : "../IMAGES/PROJECTS/GRAPHIC DESIGN/EXTRUPLAS (2020)/05.gif"
+            };
+            var links = {
+              1 : "Foraeldre.html",
+              2 : "Jojo.html",
+              3 : "Spacon.html",
+              4 : "TCWIP.html",
+              5 : "Passionfruit.html",
+              6 : "Cerne.html",
+              7 : "Riot.html",
+              8 : "Cream.html",
+              9 : "Extruplas.html"
+            };
+            var headers = {
+              1 : "Foraeldre",
+              2 : "Jojo",
+              3 : "Spacon",
+              4 : "The Complete Work In Progress",
+              5 : "Passionfruit",
+              6 : "Visual Identity for Jewelry Brand",
+              7 : "Riot Fest",
+              8 : "Cream",
+              9 : "Modular Bench",
+            };
+            var descriptions = {
+              1 : "( Coming Soon )", // Foraeldre
+              2 : "( Coming Soon )", // Jojo
+              3 : "( Coming Soon )", // Spacon
+              4 : "( Coming Soon )", // TCWIP
+              5 : "( Visual Identity & Editorial Design )", // Passionfruit
+              6 : "( Currently Unavailable )", // Cerne
+              7 : "( Visual Identity & Communication )", // Riot Fest
+              8 : "( Identity & Art Direction )", // Cream 
+              9 : "( Furniture Design )", // Extruplas
+            };
+            var active = {
+              1 : false, // Foraeldre
+              2 : false, // Jojo
+              3 : false, // Spacon
+              4 : false, // TCWIP
+              5 : true, // Passionfruit
+              6 : false, // Cerne
+              7 : true, // Riot Fest
+              8 : true, // Cream
+              9 : true, // Extruplas
+            }
+	    
+	    if(hover) {
+	      $("#main-img").attr("src", hover_images[n]);
+            } else {
+	      $("#main-img").attr("src", images[n]);
+	    }
+            $("#main-link").attr("href", links[n]);
+            $(".just").removeClass("chosen");
+            $("ul.just").children("li:nth-child("+n+")").addClass("chosen");
+            $("#project-header").text(headers[n]);
+            $("#project-description").text(descriptions[n]);
+            if(!active[n]) {
+              $("#main-link").css("pointer-events", "none");
+	      if(n == 6) {
+		$("#main-link").css("filter", "blur(9px)");
+	      } else {
+                $("#main-link").css("filter", "blur(4px)");
+	      }
+            } else {
+              $("#main-link").css("pointer-events", "auto");
+              $("#main-link").css("filter", "none");
+            }
+          }
+          </script>
+    <div style="font-size:0.9rem;width:100%;text-align:center;position:absolute;top:calc(100% - 3.55rem);">
+        <span id="project-header" style="text-transform:uppercase;"></span> <br/>
+        <span id="project-description"></span>
+    </div>
+  </body> 
+</html>
